@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банковские гарантии и кредитование бизнеса по 44-ФЗ, 223-ФЗ и 185-ФЗ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Фин<span>Гарант</span></a>
+            <nav class="nav">
+                <a href="#advantages" class="nav-link">Преимущества</a>
+                <a href="#services" class="nav-link">Услуги</a>
+                <a href="#requirements" class="nav-link">Как мы работаем</a>
+                <a href="#cta" class="nav-link">Рассчитать лимит</a>
+            </nav>
+            <div class="header-contacts">
+                <a href="tel:+79991112233" class="phone-link">+7 (999) 111-22-33</a>
+                <span class="work-time">Работаем по всей РФ</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный экран (УТП + Оффер) -->
+    <section class="hero">
+        <div class="container hero-container">
+            <span class="badge">Одобрение в 45+ банках-партнерах от 1 часа</span>
+            <h1 class="hero-title">Оформим банковскую гарантию или кредит для бизнеса с гарантией по договору</h1>
+            <p class="hero-subtitle">Помогаем получить БГ для госзакупок (44-ФЗ, 223-ФЗ, 185-ФЗ) и коммерческих тендеров. Комиссия банка — от 1%. Без залога и поручителей.</p>
+            <div class="hero-buttons">
+                <a href="#cta" class="btn btn-primary">Рассчитать стоимость БГ</a>
+                <a href="#services" class="btn btn-secondary">Виды кредитования</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок преимуществ / Экспертности -->
+    <section id="advantages" class="problems">
+        <div class="container">
+            <h2 class="section-title">Почему компании доверяют нам оформление</h2>
+            <div class="grid fields-grid">
+                <div class="problem-card">
+                    <div class="card-icon">⏱️</div>
+                    <h3>Скорость выдачи</h3>
+                    <p>Экспресс-анализ за 15 минут. Выдача банковской гарантии на любые спецсчета в течение 1 рабочего дня.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="card-icon">📉</div>
+                    <h3>Минимальная комиссия</h3>
+                    <p>Прямая подача в топ-45 банков позволяет подобрать минимальную ставку комиссии без скрытых переплат.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="card-icon">🔥</div>
+                    <h3>Сложные случаи</h3>
+                    <p>Одобряем БГ и кредиты даже при наличии отказов от других банков, высокой долговой нагрузке или нулевой отчетности.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок Направлений услуг -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Направления финансовой поддержки</h2>
+            <div class="grid pricing-grid">
+                <!-- Услуга 1 -->
+                <div class="price-card">
+                    <h3>Банковские гарантии</h3>
+                    <div class="price">от 2 000 ₽</div>
+                    <ul class="price-features">
+                        <li>Обеспечение заявок, исполнения контракта, гарантийных обязательств</li>
+                        <li>По 44-ФЗ, 223-ФЗ, 185-ФЗ (ПП РФ 615)</li>
+                        <li>Только из официального реестра Минфина</li>
+                        <li>Срок: от 1 часа до 2 дней</li>
+                    </ul>
+                    <a href="#cta" class="btn btn-primary card-btn">Оформить БГ</a>
+                </div>
+                <!-- Услуга 2 -->
+                <div class="price-card popular">
+                    <div class="popular-badge">Востребовано</div>
+                    <h3>Кредиты для бизнеса</h3>
+                    <div class="price">от 11.5% годовых</div>
+                    <ul class="price-features">
+                        <li>Оборотные кредиты и овердрафты</li>
+                        <li>Кредиты на исполнение госконтрактов</li>
+                        <li>Инвестиционные займы и лизинг</li>
+                        <li>Суммы до 150 млн рублей</li>
+                    </ul>
+                    <a href="#cta" class="btn btn-white card-btn">Получить кредит</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Пошаговый процесс -->
+    <section id="requirements" class="steps-section">
+        <div class="container">
+            <h2 class="section-title">4 простых шага до получения документов</h2>
+            <div class="grid steps-grid">
+                <div class="step-item">
+                    <div class="step-num">01</div>
+                    <h4>Оставляете заявку</h4>
+                    <p>Присылаете ИНН компании и ссылку на закупку/номер контракта.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">02</div>
+                    <h4>Подбор вариантов</h4>
+                    <p>За 15 минут анализируем базу и предлагаем 3-5 лучших условий от банков.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">03</div>
+                    <h4>Согласование макета</h4>
+                    <p>Проверяем проект текста гарантии на соответствие требованиям заказчика.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">04</div>
+                    <h4>Оплата и выпуск</h4>
+                    <p>Вы оплачиваете счет напрямую в банк. Гарантия появляется в реестре.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Лид-магнит / Форма захвата -->
+    <section id="cta" class="cta-section">
+        <div class="container cta-container">
+            <div class="cta-text">
+                <h2>Рассчитать лимит и стоимость за 15 минут</h2>
+                <p>Введите данные вашей организации. Мы бесплатно проведем скоринг вашей компании по алгоритмам топ-банков и сообщим доступный лимит по БГ и займам.</p>
+                <div class="guarantee-box">🛡️ Работаем строго конфиденциально. Данные защищены.</div>
+            </div>
+            <div class="cta-form-wrapper">
+                <form class="form" onsubmit="event.preventDefault(); alert('Данные приняты! Экспресс-анализ запущен, мы свяжемся с вами в течение 15 минут.');">
+                    <input type="text" class="input" placeholder="ИНН компании или название" required>
+                    <input type="text" class="input" placeholder="Ваше имя" required>
+                    <input type="tel" class="input" placeholder="Номер телефона для связи" required>
+                    <button type="submit" class="btn btn-primary">Получить расчет стоимости</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>
+                <p>&copy; 2026 ФинГарант. Финансовые услуги для бизнеса.</p>
+                <p class="disclaimer">Не является публичной офертой. Деятельность осуществляется в рамках партнерских соглашений с лицензированными банками РФ.</p>
+            </div>
+            <a href="#" class="policy">Политика конфиденциальности</a>
+        </div>
+    </footer>
+
+</body>
+</html>
