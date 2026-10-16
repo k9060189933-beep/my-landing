@@ -1,1 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #1c1c1e;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка */
+.header {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0f172a;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+.nav a {
+    color: #4b5563;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #2563eb;
+}
+
+.header-contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.phone-link {
+    font-weight: 700;
+    color: #0f172a;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.work-time {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* Главный экран */
+.hero {
+    padding: 200px 0 120px 0;
+    background: linear-gradient(135px, #0f172a 0%, #1e293b 100%);
+    color: #fff;
+}
+
+.badge {
+    background-color: rgba(37, 99, 235, 0.15);
+    border: 1px solid rgba(37, 99, 235, 0.3);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+.hero-title {
+    font-size: 44px;
+    font-weight: 800;
+    max-width: 900px;
+    line-height: 1.25;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #94a3b8;
+    max-width: 700px;
+    margin-bottom: 45px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #475569;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255,255,255,0.05);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #2563eb;
+}
+
+.btn-white:hover {
+    background-color: #f1f5f9;
+}
+
+/* Секции */
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #0f172a;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Карточки преимуществ */
+.problem-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.card-icon {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.problem-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+.problem-card p {
+    color: #475569;
+    font-size: 15px;
+}
+
+/* Направления услуг */
+.pricing-grid {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.price-card {
+    background: #fff;
+    padding: 50px 40px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.price-card.popular {
+    background: #0f172a;
+    color: #fff;
+    border-color: #0f172a;
+    transform: scale(1.02);
+}
+
+.price-card.popular h3 { color: #fff; }
+
+.popular-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #2563eb;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.price-card h3 {
+    font-size: 22px;
+    color: #0f172a;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 15px 0 25px 0;
+    color: #2563eb;
+}
+
+.price-card.popular .price {
+    color: #3b82f6;
+}
+
+.price-features {
+    list-style: none;
+    margin-bottom: 35px;
+}
+
+.price-features li {
+    margin-bottom: 14px;
+    font-size: 15px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.price-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+.card-btn {
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Шаги процесса */
+.steps-section {
+    background-color: #f1f5f9;
+}
+
+.step-item {
+    background: transparent;
+    padding: 20px;
+}
+
+.step-num {
+    font-size: 48px;
+    font-weight: 800;
+    color: #cbd5e1;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.step-item h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.step-item p {
+    color: #475569;
+    font-size: 14px;
+}
+
+/* Блок действия (CTA) */
+.cta-section {
+    background: #fff;
+}
+
+.cta-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: #f8f9fa;
+    padding: 60px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+}
+
+.cta-text {
+    flex: 12;
+}
+
+.cta-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.cta-text p {
+    color: #475569;
+    margin-bottom: 25px;
+}
+
+.guarantee-box {
+    font-size: 14px;
+    color: #059669;
+    font-weight: 600;
+}
+
+.cta-form-wrapper {
+    flex: 10;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    padding: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+.input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Футер */
+.footer {
+    background: #0f172a;
+    padding: 50px 0;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #475569;
+    margin-top: 10px;
+    max-width: 700px;
+}
+
+.policy {
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+.policy:hover {
+    color: #fff;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .cta-container { flex-direction: column; padding: 40px; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+    .header-container { flex-direction: column; height: auto; padding: 15px; gap: 15px; }
+    .nav { display: none; }
+    .header-contacts { text-align: center; }
+    .hero { padding: 160px 0 80px 0; text-align: center; }
+    .hero-title { font-size: 28px; }
+    .hero-subtitle { font-size: 16px; }
+    .hero-buttons { flex-direction: column; }
+    .price-card.popular { transform: none; }
+    .footer-container { flex-direction: column; gap: 20px; text-align: center; }
+}
 
